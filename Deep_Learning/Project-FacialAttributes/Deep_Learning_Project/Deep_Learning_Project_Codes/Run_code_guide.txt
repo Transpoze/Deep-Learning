@@ -1,0 +1,16 @@
+1. Install tensorflow
+2. Install home-brew
+3. Install bazel
+4. Clone tensorflow: git clone https://github.com/tensorflow/tensorflow.git
+5. Configure your tensorflow environment: sudo ./configure
+6. Build the retrainer: bash build_retrainer.sh
+3. Run the training: bash train.sh
+4. Build the final layer of the network: bash buld_final_layer.sh
+5.1 Test network on all test images: bash run_model_all_images.sh
+5.2 Test network on one test image: bash run_model_one_image.sh
+6. Get test image path: python getTestImagePath.py
+7. Format the output file: python fixOutput.py
+8. Get test image labels: python getTestImageLabel.py
+9. Evaluate classifier: python computeFinalAccuracy.py
+
+Note: We have removed all images in this folder to save space. However, all folders are still at their place so to run the code, please download the MTFL data set and divide it according to the folders. In addition, provide the correct path to all images in the provided code.
